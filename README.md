@@ -3,9 +3,10 @@ This is an extra branch providing files, programs and tasks that can be used as 
 
 ## First Stage: Git  
 The .gitignore file is still empty.  
-Enter the appropriate content so that Python cache, .pkl files, and .npy files will bne ignored.  
+Enter the appropriate content so that Python cache, .pkl files, and .npy files will be ignored.  
+In addition, all files and folders with “test” in their names should be ignored.
 
-## Second Stage: Contaianer  
+## Second Stage: Container  
 1. There is a Docker file in the Docker folder.  
 It uses a req.txt file, which does not yet exist.  
 Create it and enter the following to be installed:  
@@ -24,7 +25,9 @@ If it is not already installed, first install enroot on your device.
 1. Start a interactive docker container of the docker image.  
 Thereby mount the Python folder in the /workspace directory of the container.
 
-2. Run the file test_1.py in the Docker container. 
+2. Run the file test_1.py in the Docker container.  
+If you pass the test continue with the next step.  
+If you does not pass the test, jump back to the Second Stage.  
 
 3. Have a look at test_2.py.  
 The code works without errors, but it contains some weaknesses.  
